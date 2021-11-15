@@ -26,7 +26,6 @@ ul {
 body {
   font-family: Roboto, sans-serif;
   color: var(--first-text-color);
-  width: 1600px;
 }
 
 button {
@@ -36,7 +35,7 @@ button {
 }
 
 .container {
-  width: 1170px;
+  width: 1200px;
   padding-left: 15px;
   padding-right: 15px;
   margin: 0 auto;
@@ -82,6 +81,9 @@ img {
   margin-right: 50px;
 }
 
+.head-nav-item:not(:last-child) {
+  margin-right: 50px;
+}
 .header-nav {
   display: inline-block;
   display: flex;
@@ -152,9 +154,12 @@ img {
 .hero {
   background: var(--second-title-color);
   text-align: center;
-  width: 1600px;
-  height: 600px;
-  margin: 0 auto;
+  padding-top: 200px;
+  padding-bottom: 210px;
+}
+
+.hero-container {
+  max-width: 1600px;
 }
 
 .hero-text {
@@ -184,19 +189,16 @@ img {
   padding: 10px 32px;
 }
 
-.hero-container {
-  padding-top: 200px;
-}
-
 /********************** text l1  *********************/
 
 .text-l1 {
   background: var(--first-title-color);
+  padding-top: 94px;
+  padding-bottom: 94px;
 }
 
 .text-list {
   display: flex;
-  padding: 94px 15px 94px 15px;
 }
 
 .text-l1-item:not(:last-child) {
@@ -255,6 +257,11 @@ img {
   display: flex;
 }
 
+.div-comand {
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
 .comand-item:not(:last-child) {
   margin-right: 30px;
 }
@@ -289,7 +296,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--first-text-color);
   text-align: center;
-  margin-top: 30px;
 }
 
 .comand-prof {
@@ -301,7 +307,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--second-text-color);
   text-align: center;
-  margin-bottom: 30px;
   margin-top: 10px;
 }
 
@@ -310,7 +315,12 @@ img {
   padding: 94px 0 94px 0;
 }
 
-/************************* buner  *************************/
+/************************* cards *************************/
+
+.buner {
+  padding-top: 94px;
+  padding-bottom: 94px;
+}
 
 .buner-tap:hover,
 .buner-tap:focus {
@@ -320,7 +330,6 @@ img {
 
 .buner-list {
   display: flex;
-  margin-top: 94px;
   margin-bottom: 50px;
   display: flex;
   justify-content: center;
@@ -342,7 +351,9 @@ img {
   padding: 6px 22px;
 }
 
-/************************* cards *************************/
+.container-card {
+  margin-bottom: -30px;
+}
 
 .card-head {
   font-style: normal;
@@ -371,7 +382,6 @@ img {
   background: #ffffff;
   border: 1px solid #eeeeee;
   border-top: 0px;
-  box-sizing: border-box;
 }
 
 Boxes .card-branch {
@@ -387,9 +397,8 @@ Boxes .card-branch {
 
 .footer {
   background: var(--second-title-color);
-  width: 1600px;
+
   padding: 60px 0 60px 0;
-  margin: 0 auto;
 }
 
 .fooret-logo {
@@ -407,6 +416,7 @@ Boxes .card-branch {
 }
 
 .footer-div-logo {
+  display: block;
   margin-bottom: 20px;
 }
 
